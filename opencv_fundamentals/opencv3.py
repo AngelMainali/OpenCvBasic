@@ -6,7 +6,6 @@ img=cv.imread(r'C:\Users\Dell\Downloads\open.jpg')
 gray=cv.cvtColor(img,cv.COLOR_BGR2GRAY)
 
 #laplacian method 
-
 lap=cv.Laplacian(gray,cv.CV_64F)   #second derivative => either positive or negative
 lap=np.uint8(np.absolute(lap))     #unsigned integer
 cv.imshow('Laplacian',lap)
